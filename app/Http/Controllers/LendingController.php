@@ -170,15 +170,15 @@ class LendingController extends Controller
      * @param  \App\Models\Lending  $lending
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
-    {
-        //menampilkan form edit data
-        //ambil data dari db yang idnya sama dengan id yang dikirim dari routenya
-        $lending = Lending::Where('id', $id)->first();
-        // lalu tampilkan halaman dari view edit dengan mengirim data yang ada di variable todo
-        return view('dashboard.edit', compact('lending'));
+        public function edit($id)
+        {
+            //menampilkan form edit data
+            //ambil data dari db yang idnya sama dengan id yang dikirim dari routenya
+            $lending = Lending::Where('id', $id)->first();
+            // lalu tampilkan halaman dari view edit dengan mengirim data yang ada di variable todo
+            return view('dashboard.edit', compact('lending'));
 
-    }
+        }
 
     /**
      * Update the specified resource in storage.

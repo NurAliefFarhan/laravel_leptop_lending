@@ -24,5 +24,5 @@ class isLogin
         }
         // kalau gaada history login bakal dibalikin ke halaman login dengan pesan error
         return redirect()->route('login')->with('notAllowed','Silahkan login terlebih dahulu!');
-    }
+    } 
 }
